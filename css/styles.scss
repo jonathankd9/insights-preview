@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import 'ultilities';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #333;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 80%;
+    margin: 150px auto;
+
+}
+
+.text-section {
+    background-color: blueviolet;
+    padding: 30px 40px;
+}
+
+.img-section {
+    height: auto;
+    width: 100%;
+    background-image: url('/image.jpg');
+    background-size: cover;
+}
+
+
+.small-section {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;   
+
+    .sect p {
+        font-size: 11px;
+    }
+}
+
+
+// Tablet
+@media (max-width: 768px) {
+    .container {
+        margin: 70px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 60%;
+        height: 100%;
+    }
+
+}
+
+// Mobile
+@media (max-width: 500px) {
+    .container {
+        margin: 70px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 90%;
+        height: 100%;
+    }
+
+
+}
+
