@@ -28,6 +28,7 @@ h1 {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 .container {
@@ -45,10 +46,9 @@ img {
 }
 
 .img-section {
-    height: auto;
-    width: 100%;
-    background-image: url('/image.jpg');
+    background-image: url('/image-min.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
